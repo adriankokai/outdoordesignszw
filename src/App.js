@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Blog from '../src/pages/Blog'
-import Portfolio from '../src/pages/Portfolio'
+import Home from '../src/pages/Home'
+import Products from './pages/Products';
+import About from './pages/About';
 import "materialize-css/dist/css/materialize.min.css";
-import BlogPost from './pages/BlogPost';
 
 export class App extends Component {
   render() {
     return (
       <Router>
-          <Route exact path='/' component={Blog} />
-          <Route exact path='/portfolio' component={Portfolio} />
-          <Route exact path='/:title/' component={BlogPost} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/products' component={Products} />
+          <Route exact path='/about' component={About} />
       </Router>
     )
   }
