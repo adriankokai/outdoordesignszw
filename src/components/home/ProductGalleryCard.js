@@ -5,7 +5,6 @@ export class ProductGalleryCard extends Component {
     render() {
         return (
             <div class="row z-depth-5" style={{margin: '1rem'}} >
-                <div className="blue" />
                 <div class="col s12 m7">
                     <div class="card transparent z-depth-0 darken-1">
                         <div class="card-content center white-text" style={{paddingTop: '20%'}} >
